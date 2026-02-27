@@ -1,0 +1,10 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 64 64">
+  <defs>
+    <mask id="m">
+      <rect width="64" height="64" fill="white"/>
+      <rect x="28" y="0" width="8" height="32" fill="black"/>
+      <rect x="0" y="28" width="32" height="8" fill="black"/>
+    </mask>
+  </defs>
+  <circle cx="32" cy="32" r="28" fill="none" stroke="#3a9b8f" stroke-width="8" mask="url(#m)"/>
+</svg>
