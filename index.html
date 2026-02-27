@@ -304,6 +304,9 @@ img{max-width:100%;display:block}
 .floating-btns a{width:58px;height:58px;border-radius:50%;display:flex;align-items:center;justify-content:center;color:#fff;box-shadow:0 4px 24px rgba(0,0,0,0.2);transition:all 0.3s cubic-bezier(0.16,1,0.3,1)}
 .floating-btns a:hover{transform:scale(1.12)}
 .floating-btns .fab-call{background:linear-gradient(135deg,var(--accent),var(--accent-hover));box-shadow:0 4px 24px rgba(58,155,143,0.3)}
+@media(max-width:768px){.floating-btns .fab-call{animation:fabPulse 2s ease-in-out infinite}}
+@media(prefers-reduced-motion:reduce){.floating-btns .fab-call{animation:none!important}}
+@keyframes fabPulse{0%,100%{box-shadow:0 4px 24px rgba(58,155,143,0.3)}50%{box-shadow:0 0 0 12px rgba(58,155,143,0),0 4px 24px rgba(58,155,143,0.3)}}
 .floating-btns .fab-call svg{stroke:#fff;fill:none}
 .floating-btns svg{width:24px;height:24px}
 
